@@ -44,7 +44,7 @@
     </header>
     <main class="container">
       <section class="introduction">
-        <h1 class="introduction__h headline">Welcome to Be Latte</h1>
+        <h1 class="introduction__h">Welcome to Be Latte</h1>
         <p class="introduction__intro">Enjoy of a fresh new approach of coffee. Proin iaculis leo ac pharetra aliquam.
         Duis mollis posuere nisi, vitae sollicitudin justo porta sed. </p>
         <button class="button" type="button" name="button">See menu</button>
@@ -63,7 +63,6 @@
 
       <section class="menu">
         <h2 class="menu__h headline">Menu</h2>
-
         <div class="menu__container">
           <article class="submenu">
             <h3 class="submenu__h submenu--coffee headline">Coffee</h3>
@@ -152,58 +151,79 @@
 
       <section class="testimonials">
         <h2 class="headline">Testimonials</h2>
-        <div class="testimonials__wrapper slider">
-          <ul>
-            <li>
-              <article class="">
-
+        <div class="testimonials__content">
+          <div class="testimonials__list">
+            <div class="testimonials__item">
+              <p class="testimonials__number">.01</p>
+              <article class="review testimonials__review">
+                <img src="../img/review-photo.png" class="review__photo" alt="">
+                <p class="review__name">Chris Parker</p>
+                <p class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin iaculis leo ac pharetra aliquam.
+                </p>
               </article>
-            </li>
-          </ul>
-          <img src="" alt="">
-          <div class="review">
-            <img class="review__photo" src="" alt="">
-
-
+            </div>
           </div>
-
         </div>
+        <span class="icon fas fa-coffee"></span>
       </section>
 
       <section class="location">
-        <h2 class="headline">Location</h2>
+        <h2 class="location__h headline">Location</h2>
         <div class="location__wrapper">
-          <img src="" alt="Карта">
           <div class="location__text-block">
-            <p>
-              <b>Location</b>
-              Visit us at St. Thomas Street 21st, suite 110,
-              Santa Monica, California.
-            </p>
-            <p>
-              <b>Hours</b>
-              <span>Mon-Sat:</span>
-              <span>7am - 8pm</span>
-              <span>Sunday:</span>
-              <span>7am - 5 pm</span>
-            </p>
-            <p>
-              <b>Happy hour</b>
-              <span>Mon-Fri:</span>
-              <span>4pm - 6pm</span>
-            </p>
+            <dl class="location__list">
+              <div class="location__item">
+                <dt class="location__label">Location</dt>
+                <dd class="location__value">
+                  Visit us at St. Thomas Street 21st, suite 110,
+                  Santa Monica, California.
+                </dd>
+              </div>
+            <div class="location__item">
+              <dt class="location__label">Hours</dt>
+              <dd class="location__value">
+                <b>Mon-Sat:</b>
+                <span class="location__time">7am - 8pm</span>
+              </dd>
+              <dd class="location__value">
+                <b>Sunday:</b>
+                <span class="location__time">7am - 5 pm</span>
+              </dd>
+            </div>
+            <div class="location__item">
+              <dt class="location__label">Happy hour</dt>
+              <dd class="location__value">
+                <b>Mon-Fri:</b>
+                <span class="location__time">4pm - 6pm</span>
+              </dd>
+            </div>
+            </dl>
           </div>
+          <iframe
+            class="location__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.72811932581!2d-118.51577494181888!3d34.02185553708686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2z0KHQsNC90YLQsC3QnNC-0L3QuNC60LAsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1536780527359"
+            width="600"
+            frameborder="0"
+            style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="social-links">
-        <a href="#">Fb</a>
-        <a href="#">Tw</a>
-        <a href="#">Inst</a>
+    <footer class="footer container">
+      <div class="footer__social-links">
+        <a href="#" class="footer__social-link">
+          <span class="fab fa-facebook-f"></span>
+        </a>
+        <a href="#" class="footer__social-link">
+          <span class="fab fa-twitter"></span>
+        </a>
+        <a href="#" class="footer__social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-      <p class="address">
+      <p class="footer__address">
         St. Thomas Street 21st, suite 110,
         Santa Monica, California
       </p>
